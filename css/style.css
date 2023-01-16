@@ -26,7 +26,7 @@ html{
 /* Акцентируваний фон #2196F3  */
 
 /* Основной фон #F5F4FA */
-h1,h2,h3,h4,h5,h6,p,ul,li{
+h1,h2,h3,h4,h5,h6,p,ul,li,a{
     margin: 0;
     padding: 0;
 }
@@ -133,6 +133,28 @@ header .logo{
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    display: inline-flex;
+}
+
+.contakts-link::before{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.smartphone::before{
+    background-image: url(../images/smartphone.svg);
+}
+
+.envelope::before{
+    background-image: url(../images/envelope.svg);
+}
+
+.item{
+    display: flex;
 }
 
 /* Footer */
@@ -240,6 +262,34 @@ margin-top: 30px;
 
 .feature-item:not(:last-child){
     margin-right: 30px;
+}
+
+.feature-item::before{
+    background-color: var(--bgc-color);
+    display: block;
+    content: '';
+    height: 120px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+
+}
+
+.antenna::before{
+    background-image: url(../images/antenna.svg);
+}
+
+.clock::before{
+    background-image: url(../images/clock.svg);
+}
+
+.diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before{
+    background-image: url(../images/astronaut.svg);
 }
 
 .invisible{
@@ -422,3 +472,82 @@ margin-top: 10px;
     margin-top: 20px;
    }
 
+   .team-link-list{
+    
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: var(--white-color);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+   }
+   
+   .team-link-list:hover{
+    background-color: var(--acent-color);
+   }
+   .instagramm{
+    background-image: url(../images/instagram.svg);
+   }
+
+   .twitter{
+    background-image: url(../images/twitter.svg);
+   }
+
+   .facebook{
+    background-image: url(../images/facebook.svg);
+   }
+
+   .linkedin{
+    background-image: url(../images/linkedin.svg);
+   }
+   .team-link{
+    justify-content: center;
+    gap: 10px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   }
+
+
+   .clients-link{
+    box-sizing: border-box;
+    height: 92px;
+    width: 170px;
+    background-image: url(../images/Client1.svg);
+    margin-top: 50px;
+   }
+
+   .clients-link + .clients-link{
+    margin-left: 30px;
+   }
+
+   .clients{
+    display: flex;
+   }
+   .client1{
+    background-image: url(../images/Client1.svg);
+   }
+
+   .client2{
+    background-image: url(../images/Client2.svg);
+   }
+
+   .client3{
+    background-image: url(../images/Client3.svg);
+   }
+
+   .client4{
+    background-image: url(../images/Client4.svg);
+   }
+
+   .client5{
+    background-image: url(../images/Client5.svg);
+   }
+
+   .client6{
+    background-image: url(../images/Client6.svg);
+   }
