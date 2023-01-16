@@ -173,9 +173,18 @@ header .logo{
 .hero{
     background-color: var(--bgc-up-color);
     color: var(--white-color);
-
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 200px 0;
+    /* background-image: url(../images/hero.jpg); */
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .hero-title{
