@@ -163,6 +163,7 @@ header .logo{
     background-color: var(--bgc-footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .logo-white{
@@ -550,4 +551,51 @@ margin-top: 10px;
 
    .client6{
     background-image: url(../images/Client6.svg);
+   }
+
+   .adresa-link{
+    display: flex;
+   }
+
+   .link{
+    margin-left: 70px;
+   }
+
+   .link-title{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-top: 12px;
+
+
+   }
+
+   .link-list{
+    display: flex;
+   }
+
+   .link-list-item{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 20px;
+   }
+
+   .link-list-item:hover{
+    background-color: var(--acent-color);
+   }
+
+   .link-list-item + .link-list-item{
+    margin-left: 10px;
    }
